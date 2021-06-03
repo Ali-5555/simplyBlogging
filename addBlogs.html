@@ -19,5 +19,22 @@
             </ul>
         </nav>
     </header>
+
+    <div class="container row" id="blogs_container">
+
+        <form action="" method="POST" class="col-6">
+            <div>
+                <label for="title_input" class="form-label">Title</label>  
+                <input type="text" class="form-control" id="title_input"><br> 
+    
+                <label for="article_text" class="form-label">Article</label> 
+                <textarea cols="4" rows="8" class="form-control" id="article_text"></textarea><br>
+    
+                <input type="button" value="Create" class="form-control btn btn-primary" onclick="getInput()">
+            </div>
+        </form>
+    
+        <div class="col-6" id="blogs_div"></div>
+    </div>
 </body>
 </html>
