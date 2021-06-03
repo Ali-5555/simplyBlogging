@@ -24,6 +24,28 @@
         }
 
     </style>
+    <script>
+        function getInput() {
+            let title = document.getElementById("title_input").value;
+            let article = document.getElementById("article_text").value;
+            let blogs_div = document.getElementById("blogs_div");
+
+            let newPost = document.createElement("div");
+            let newTitle = document.createElement("h2");
+            let newPara = document.createElement("p");
+
+            newPost.setAttribute("class", "blogs");
+            newTitle.setAttribute("class", "title_h1");
+            newPara.setAttribute("class", "article_para");
+            
+            newTitle.innerHTML = title;
+            newPara.innerHTML = article;
+
+            newPost.appendChild(newTitle);
+            newPost.appendChild(newPara);
+            blogs_div.appendChild(newPost);
+        }
+    </script>
 </head>
 <body>
     <header>
